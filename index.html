@@ -1,1 +1,313 @@
-Integrador CAC2023
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- favicon-->
+  <link rel="apple-touch-icon" sizes="57x57" href="imagenes/favicon-tuc/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="imagenes/favicon-tucimagenes/favicon-tuc/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="imagenes/favicon-tuc/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="imagenes/favicon-tuc/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="imagenes/favicon-tuc/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="imagenes/favicon-tuc/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="imagenes/favicon-tuc/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="imagenes/favicon-tuc/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imagenes/favicon-tuc/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="imagenes/favicon-tuc/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-tuc/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon-tuc/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-tuc/favicon-16x16.png" />
+  <link rel="manifest" href="imagenes/favicon-tuc/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- favicon-->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conferencias - Integrador CAC 2023</title>
+  <!-- reset css-->
+  <link rel="stylesheet" href="css/reset.css" />
+  <!--boostrap 5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--estilos propios-->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!--fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main class="container-fluid" data-bs-theme="dark">
+    <!-- MENU-->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+        <a class="navbar-brand mx-2" href="#">
+          <img class="rounded" src="imagenes/logtuc.png" alt="Logotucuman" width="60rem" height="60rem"
+            class="d-inline-block align-text-top" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-1 btn btn-primary">
+              <a class="nav-link" aria-current="page" href="#carrusel">CONFERENCIA</a>
+            </li>
+
+            <li class="nav-item mx-1 btn btn-primary">
+              <a class="nav-link" href="#oradores">ORADORES</a>
+            </li>
+
+            <li class="nav-item mx-1 btn btn-primary">
+              <a class="nav-link" href="#serOrador">SER ORADOR</a>
+            </li>
+
+            <li class="nav-item mx-1 btn btn-primary">
+              <a class="nav-link" href="#tucuman">SEDE TUCUMAN</a>
+            </li>
+          </ul>
+     
+          <a class="btn btn-success btn-lg text-light mx-3" href="#comprarTickets">
+            COMPRAR TICKETS
+          </a>
+       
+        </div>
+      </nav>
+      <!-- contenido en secciones-->
+    </header>
+
+    <!-- CARRUSEL DE TUCUMAN -->
+    <section id="carrusel" class="row">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/casa-gob-tuc.jpg" class="d-block w-100 imgDark" alt="casa go tuc" />
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/universidad.jpg" class="d-block w-100" alt="centro cultural unt" />
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/casa-historica.jpg" class="d-block w-100" alt="casa historica" />
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/parapente-cerro-san-javier.jpg" class=" w-100" alt="cerro san javier" />
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/plaza-independencia.jpg" class=" w-100" alt="cerro san javier" />
+          </div>
+        </div>
+
+        <button class="carousel-control-prev btn-success" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn-success" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ORADORES -->
+    <section id="oradores" class="row d-flex justify-content-center flex-wrap ">
+      <article class="row d-flex justify-content-center text-center flex-wrap mt-5 pt-5">
+        <h1 class="text-light">ORADORES</h1>
+        <div class="card m-3" >
+          <img src="imagenes/personajes/jobs.jpg" class="card-img-top rounded" alt="steve jobs" />
+          <div class="card-body">
+            <h5 class="card-title text-warning">Steve Jobs</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Reseña</a>
+            <a href="#" class="btn btn-secondary">Biografia</a>
+          </div>
+          </div>
+        </div>
+
+       
+        <div class="card m-3" >
+          <img src="imagenes/personajes/evelyn-berezin.jpg" class="card-img-top rounded" alt="evelin berezin" />
+          <div class="card-body">
+            <h5 class="card-title text-warning">Evelyn Berezin</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Reseña</a>
+            <a href="#" class="btn btn-secondary">Biografia</a>
+          </div>
+        </div>
+
+        <div class="card m-3" >
+          <img src="imagenes/personajes/gates.png" class="card-img-top rounded" alt="bill gates" />
+          <div class="card-body">
+            <h5 class="card-title text-warning">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Reseña</a>
+            <a href="#" class="btn btn-secondary">Biografia</a>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="row d-flex justify-content-center flex-wrap">
+        
+        <div class="card m-3" >
+          <img src="imagenes/personajes/zuckerberg.png" class="card-img-top rounded" alt="zuckerberg" />
+          <div class="card-body">
+            <h5 class="card-title text-warning">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Reseña</a>
+            <a href="#" class="btn btn-secondary">Biografia</a>
+          </div>
+        </div>
+          
+        <div class="card m-3">
+          <img src="imagenes/personajes/katherine_johnson.jpg" class="card-img-top rounded" alt="katherine johnson" />
+          <div class="card-body">
+            <h5 class="card-title text-warning">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Reseña</a>
+            <a href="#" class="btn btn-secondary">Biografia</a>
+          </div>
+        </div>
+
+      </article>
+    </section>
+    
+    <!-- REGISTRO ORADORES-->
+    <section id="serOrador" class="row">
+      <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark">
+        
+        <form action="" class="position-relative top-50 start-100 translate-middle">
+          <h1 class="text-light ">REGISTRO ORADORES</h1>
+          <div class="mb-3">
+            <label for="apellido" class="form-label text-white">Apellido</label>
+            <input type="text" class="form-control" name="apellido" id="apellido" aria-describedby="helpId"
+              placeholder="Apellido" required />
+          </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label text-white">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId"
+              placeholder="Nombre" required />
+          </div>
+          <div class="mb-3">
+            <label for="tema" class="form-label text-white">Tema de interes</label>
+            <input type="text" class="form-control" name="tema" id="tema" aria-describedby="helpId"
+              placeholder="Tema de interes" required />
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label text-white">Describa el tema de interes</label>
+            <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+          </div>
+
+          <div class="d-grid gap-1 col-12 mx-auto">
+            <button type="button" class="btn btn-primary btn-sm-3" onclick="registrar();">
+              Resgitrarse
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm();">
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- TUCUMAN -->
+    <section id="tucuman" class="row">
+      <div class="row">
+        <div class="col-6" <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim
+          blanditiis placeat labore vero dignissimos minus officiis id? Odit
+          ad inventore et amet quibusdam rerum laboriosam ex beatae, natus
+          quam?
+          </p>
+        </div>
+        <div class="col-6">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim
+            blanditiis placeat labore vero dignissimos minus officiis id? Odit
+            ad inventore et amet quibusdam rerum laboriosam ex beatae, natus
+            quam?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FORMULARIO COMPRAR TICKET -->
+    <section id="comprarTickets" class="row">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <footer class="row sticky-bottom align-items-center bg-dark flex-wrap rounded">
+      <div class="col-12 col-md-4 align-items-center d-flex  flex-wrap">
+        <a class="navbar-brand" href="#">
+          <img class="rounded" src="imagenes/logtuc.png" alt="Logotucuman" width="50rem" height="50rem"
+            class="d-inline-block align-text-top" />
+        </a>
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/logocac.png" alt="Logotucuman" width="80rem" height="60rem"
+            class="d-inline-block align-text-top" />
+        </a>
+        <span class="link-warning">
+          Conferencias CAC 2023
+        </span>
+      </div>
+
+      <div class="col-12 col-md-2 justify-content-center align-items-center d-flex flex-wrap">
+        <span class="link-warning">
+          By Cristian M. Aparicio
+        </span>
+      </div>
+
+      <div class="col-12 col-md-6 align-items-center d-none d-md-flex flex-wrap">
+        <a href="#" class="nav-link link-warning mx-1"><span>Cuéntanos</span></a>
+        <a href="#" class="nav-link link-warning mx-1"><span>Privacidad</span></a>
+        <a href="#" class="nav-link link-warning mx-1"><span>Estudiantes</span></a>
+        <a href="#" class="nav-link link-warning mx-1"><span>Prensa</span></a>
+        <a href="#" class="nav-link link-warning mx-1"><span>Preguntas frecuentes</span></a>
+        <a href="#" class="nav-link link-warning mx-1"><span>Términos y condiciones</span></a>
+      </div>
+    </footer>
+  </main>
+
+  <!--bootstrap5 scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <!-- funciones-->
+    <script src="js/js.js"></script>
+</body>
+
+</html>
