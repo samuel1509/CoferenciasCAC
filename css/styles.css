@@ -30,6 +30,10 @@ section{
     width: 18rem;
 }
 
+.sede{
+    background-color: gray;
+}
+
 form{
     background-color: gray;
 }
