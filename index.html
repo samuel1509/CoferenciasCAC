@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- favicon-->
   <link rel="apple-touch-icon" sizes="57x57" href="imagenes/favicon-tuc/apple-icon-57x57.png" />
@@ -21,21 +20,25 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
   <!-- favicon-->
-
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Conferencias - Integrador CAC 2023</title>
   <!-- reset css-->
   <link rel="stylesheet" href="css/reset.css" />
   <!--boostrap 5-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Animaciones-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!--fuentes-->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
   <!--estilos propios-->
   <link rel="stylesheet" href="css/styles.css" />
-  <!--fuentes-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -43,6 +46,7 @@
     <!-- MENU-->
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+        
         <a class="navbar-brand mx-2" href="#">
           <img class="rounded" src="imagenes/logtuc.png" alt="Logotucuman" width="60rem" height="60rem"
             class="d-inline-block align-text-top" />
@@ -55,34 +59,36 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-1 btn btn-primary">
+            <li class="nav-item m-2 btn btn-primary">
               <a class="nav-link" aria-current="page" href="#carrusel">CONFERENCIA</a>
             </li>
 
-            <li class="nav-item mx-1 btn btn-primary">
+            <li class="nav-item m-2 btn btn-primary">
               <a class="nav-link" href="#oradores">ORADORES</a>
             </li>
 
-            <li class="nav-item mx-1 btn btn-primary">
+            <li class="nav-item m-2 btn btn-primary">
               <a class="nav-link" href="#serOrador">SER ORADOR</a>
             </li>
 
-            <li class="nav-item mx-1 btn btn-primary">
+            <li class="nav-item m-2 btn btn-primary">
               <a class="nav-link" href="#tucuman">SEDE TUCUMAN</a>
             </li>
+
           </ul>
-
-          <a class="btn btn-success btn-lg text-light mx-3" href="#comprarTickets">
-            COMPRAR TICKETS
-          </a>
-
-        </div>
+          <div class="d-grid gap-2 d-block">
+            <a class="btn btn-lg btn-success text-light mx-2 " href="#comprarTickets">
+              COMPRAR TICKETS
+            </a>
+          </div>
+      </div>
+      
       </nav>
       <!-- contenido en secciones-->
     </header>
 
     <!-- CARRUSEL DE TUCUMAN -->
-    <section id="carrusel" class="row">
+    <section id="carrusel" class="row" data-aos="zoom-in-up" >
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -130,7 +136,7 @@
     </section>
 
     <!-- ORADORES -->
-    <section id="oradores" class="row d-flex justify-content-center flex-wrap ">
+    <section id="oradores" class="row d-flex justify-content-center flex-wrap " data-aos="zoom-in-up"  >
       <article class="row d-flex justify-content-center text-center flex-wrap mt-5 pt-5">
         <h1 class="text-light">ORADORES</h1>
         <div class="card m-3">
@@ -165,11 +171,9 @@
             <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
           </div>
         </div>
-
       </article>
 
       <article class="row d-flex justify-content-center flex-wrap">
-
         <div class="card m-3">
           <img src="imagenes/personajes/zuckerberg.png" class="card-img-top rounded mt-3" alt="zuckerberg" />
           <div class="card-body">
@@ -192,26 +196,25 @@
             <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
           </div>
         </div>
-
       </article>
     </section>
 
     <!-- REGISTRO ORADORES-->
-    <section id="serOrador" class="row">
+    <section id="serOrador" class="row" data-aos="zoom-in-up" >
       <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark">
-        <form action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
+        <form id="registrarOrador" action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
           <h1 class="text-light ">REGISTRO DE ORADORES</h1>
           <div class="mb-3 row">
-            <label for="apellido" class="col-sm-2 col-form-label text-white">Apellido</label>
+            <label for="apellido_fo" class="col-sm-2 col-form-label text-white">Apellido</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="apellido" id="apellido" aria-describedby="helpId"
+              <input type="text" class="form-control" name="apellido_fo" id="apellido_fo" aria-describedby="helpId"
                 placeholder="Ingrese su apellido" required />
             </div>
           </div>
           <div class="mb-3 row">
-            <label for="nombre" class="col-sm-2 col-form-label text-white">Nombre</label>
+            <label for="nombre_fo" class="col-sm-2 col-form-label text-white">Nombre</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId"
+              <input type="text" class="form-control" name="nombre_fo" id="nombre_fo" aria-describedby="helpId"
                 placeholder="Ingrese su nombre" required />
             </div>
           </div>
@@ -223,79 +226,114 @@
             </div>
           </div>
           <label for="descripcion" class="form-label text-white">Describa el tema de interes</label>
-          <textarea class="form-control" id="descripcion" rows="3" 
-          placeholder="Descirba el tema elegido"
-          required></textarea>
+          <textarea class="form-control" id="descripcion" rows="3" placeholder="Descirba el tema elegido"
+            required></textarea>
+          <hr class="border-bottom">
           <div class="col mt-3">
-          <button type="button" class="btn btn-primary btn-sm-3" onclick="registrar();">
-            Resgistrarse
-          </button>
-          <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm();">
-            Cancelar
-          </button>
-        </div>
+            <button type="button" class="btn btn-primary btn-sm-3" onclick="registrar();">
+              Resgistrarse
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm('registrarOrador');">
+              Cancelar
+            </button>
+          </div>
         </form>
       </div>
     </section>
-    <!-- TUCUMAN -->
-    <section id="tucuman" class="row">
-      <div class="row">
-        <div class="col-6" <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim
-          blanditiis placeat labore vero dignissimos minus officiis id? Odit
-          ad inventore et amet quibusdam rerum laboriosam ex beatae, natus
-          quam?
-          </p>
-        </div>
-        <div class="col-6">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim
-            blanditiis placeat labore vero dignissimos minus officiis id? Odit
-            ad inventore et amet quibusdam rerum laboriosam ex beatae, natus
-            quam?
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- FORMULARIO COMPRAR TICKET -->
-    <section id="comprarTickets" class="row">
-      <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark">
-        <form action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
-          <h1 class="text-light ">COMPRAR TICKETS</h1>
-          <div class="mb-3 row">
-            <label for="cantidad" class="col-sm-2 col-form-label text-white">Cantidad</label>
-            <div class="col-sm-10">
-              <input type="number" class="form-control" name="cantidad" id="cantidad" aria-describedby="helpId"
-              min="1" max="10" placeholder="Cantidad de tickets a comprar.Mmaximo 10" required />
-                 
+
+    <!-- SEDE TUCUMAN -->
+    <section id="tucuman" class="row d-flex justify-content-center flex-wrap">
+      <article class="row  pt-5 mt-5">
+        <h1 class="text-light text-center">SEDE TUCUMAN</h1>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 p-2">
+            <div class="card-lg-6 card-sm-12">
+              <img src="/imagenes/san-miguel-de-tucuman.jpg" class=" fluid rounded w-100 " alt="plaza independencia">
             </div>
           </div>
+
+          <div class="col-lg-6 col-sm-12 p-2">
+            <div class="card-lg-6 card-sm-12">
+              <p class="text-white sede rounded p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, hic minima ipsa ducimus quod repellat
+                placeat provident adipisci magnam tenetur similique itaque rem. Nam eaque eum unde ex impedit dolorem.
+                Tempora, necessitatibus fuga enim suscipit eveniet nobis est. Fugit molestias nostrum odit consequuntur
+                saepe modi aut eius, maiores suscipit id commodi culpa? Iste ipsam eum assumenda maxime quos? Quasi,
+                esse!
+                Dolore necessitatibus nisi facilis illo ex maiores molestiae delectus, fuga ratione nemo explicabo
+                aliquid
+                totam saepe laborum itaque perferendis, voluptas aspernatur architecto, ad voluptatum nam cum placeat.
+                Et,
+                ut! Laboriosam!
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </article>
+    </section>
+
+    <!-- FORMULARIO COMPRAR TICKET -->
+    <section id="comprarTickets" class="row"  >
+      <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark" data-aos="zoom-in-up">
+        <form id="comprarTicket" action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
+
+          <h1 class="text-light ">COMPRAR TICKETS</h1>
+
           <div class="mb-3 row">
-            <label for="nombre" class="col-sm-2 col-form-label text-white">Nombre</label>
+            <label for="apellido_tk" class="col-sm-2 col-form-label text-white">Apellido</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId"
+              <input type="text" class="form-control" name="apellido_tk" id="apellido_tk" aria-describedby="helpId"
+                placeholder="Ingrese su apellido" required />
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="nombre_tk" class="col-sm-2 col-form-label text-white">Nombre</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="nombre_tk" id="nombre_tk" aria-describedby="helpId"
                 placeholder="Ingrese su nombre" required />
             </div>
           </div>
+
           <div class="mb-3 row">
-            <label for="tema" class="col-sm-2 col-form-form-label text-white">Tema</label>
+            <label for="cantidad" class="col-sm-2 col-form-label text-white">Cantidad</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="tema" id="tema" aria-describedby="helpId"
-                placeholder="Ingrese el tema de interes" required />
+              <input type="number" class="form-control" name="cantidad" id="cantidad" aria-describedby="helpId" min="1"
+                max="10" placeholder="Cantidad de tickets a comprar.Mmaximo 10" required onkeyup="calcularTotal();"
+                onchange="calcularTotal();" />
+            </div>
+            <div class="text-warning">Valor ticket $1000</div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="descuento" class="col-sm-2 col-form-label text-white">Descuento</label>
+            <div class="col-sm-10">
+              <select class="form-select" name="descuento" id="descuento" onchange="calcularTotal();">
+                <option value="50">Estudiante 50%</option>
+                <option value="30">Orador 30%</option>
+                <option value="10">Particular 10%</option>
+              </select>
             </div>
           </div>
-          <label for="descripcion" class="form-label text-white">Describa el tema de interes</label>
-          <textarea class="form-control" id="descripcion" rows="3" 
-          placeholder="Descirba el tema elegido"
-          required></textarea>
-          <div class="col mt-3">
-          <button type="button" class="btn btn-primary btn-sm-3" onclick="registrar();">
-            Resgistrarse
+
+          <hr class="border-bottom">
+
+          <div class="text-warning m-2">
+            <h3>Total a pagar: $<span id="total">0</span></h3>
+          </div>
+
+          <hr class="border-bottom">
+
+          <button type="button" class="btn btn-primary btn-sm-3" onclick="comprarTicket();">
+            Comprar
           </button>
-          <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm();">
+          <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm('comprarTicket');">
             Cancelar
           </button>
-        </div>
+
         </form>
       </div>
     </section>
@@ -331,14 +369,18 @@
       </div>
     </footer>
   </main>
+ <!-- funciones-->
+ <script src="js/js.js"></script>
 
   <!--bootstrap5 scripts-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-
-  <!-- funciones-->
-  <script src="js/js.js"></script>
+   
+   <!-- animaciones-->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script> AOS.init(); </script>
+ 
 </body>
 
 </html>
