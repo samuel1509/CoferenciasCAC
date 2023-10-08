@@ -12,3 +12,8 @@ function registrar() {
     alert("Debe completar los campos obligatorios");
   }
 }
+
+//limpiar fomulario
+function limpiar(){
+  
+}

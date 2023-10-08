@@ -30,6 +30,13 @@ section{
     width: 18rem;
 }
 
+form{
+    background-color: gray;
+}
+#descripcion{
+    resize: none;
+}
+
 footer{
     font-size: 0.75em;
 }
