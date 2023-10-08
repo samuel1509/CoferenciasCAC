@@ -3,6 +3,7 @@
     font-family: 'Josefin Sans', sans-serif;                                              
     font-size: 1.25em;
 }
+
 body{
     background-image: url(/imagenes/wallpaper.png);
     background-size: cover;
@@ -15,6 +16,10 @@ a{
 
 a:hover{
     cursor: pointer;
+}
+
+.cicloConf{
+    opacity: 0.80;
 }
 /*
 section{
