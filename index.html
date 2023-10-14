@@ -42,54 +42,55 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
-  <main class="container-fluid" data-bs-theme="dark">
-    <!-- MENU-->
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+<body class="container-fluid" data-bs-theme="dark">
+hola
+  <!-- CABECERA-->
+  <header class="sticky-top">
+  </header>
+  <!-- MENU-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary rounded sticky-top">
+    <a class="navbar-brand mx-2" href="#">
+      <img class="rounded" src="imagenes/logtuc.png" alt="Logotucuman" width="60rem" height="60rem"
+        class="d-inline-block align-text-top" />
+    </a>
 
-        <a class="navbar-brand mx-2" href="#">
-          <img class="rounded" src="imagenes/logtuc.png" alt="Logotucuman" width="60rem" height="60rem"
-            class="d-inline-block align-text-top" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item m-2 btn btn-primary">
+          <a class="nav-link" aria-current="page" href="#carrusel">CONFERENCIA</a>
+        </li>
+
+        <li class="nav-item m-2 btn btn-primary">
+          <a class="nav-link" href="#oradores">ORADORES</a>
+        </li>
+
+        <li class="nav-item m-2 btn btn-primary">
+          <a class="nav-link" href="#serOrador">SER ORADOR</a>
+        </li>
+
+        <li class="nav-item m-2 btn btn-primary">
+          <a class="nav-link" href="#tucuman">SEDE TUCUMAN</a>
+        </li>
+
+      </ul>
+      <div class="d-grid gap-2 d-block">
+        <a class="btn btn-lg btn-success text-light mx-2 " href="#comprarTickets">
+          COMPRAR TICKETS
         </a>
+      </div>
+    </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item m-2 btn btn-primary">
-              <a class="nav-link" aria-current="page" href="#carrusel">CONFERENCIA</a>
-            </li>
-
-            <li class="nav-item m-2 btn btn-primary">
-              <a class="nav-link" href="#oradores">ORADORES</a>
-            </li>
-
-            <li class="nav-item m-2 btn btn-primary">
-              <a class="nav-link" href="#serOrador">SER ORADOR</a>
-            </li>
-
-            <li class="nav-item m-2 btn btn-primary">
-              <a class="nav-link" href="#tucuman">SEDE TUCUMAN</a>
-            </li>
-
-          </ul>
-          <div class="d-grid gap-2 d-block">
-            <a class="btn btn-lg btn-success text-light mx-2 " href="#comprarTickets">
-              COMPRAR TICKETS
-            </a>
-          </div>
-        </div>
-
-      </nav>
-      <!-- contenido en secciones-->
-    </header>
-
+  </nav>
+  <!-- MAIN - CONTENIDO -->
+  <main class="container-fluid" data-bs-theme="dark">
+    <!-- contenido en secciones-->
     <!-- CARRUSEL DE TUCUMAN -->
-    <section id="carrusel" class="row" data-aos="zoom-in-up">
+    <article id="carrusel" class="row" data-aos="zoom-in-up">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -106,9 +107,11 @@
 
         </div>
         <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img src="imagenes/casa-gob-tuc.jpg" class="d-block w-100 imgDark" alt="casa go tuc" />
+          
+          <div class="carousel-item active ">
+            
+            <img src="imagenes/casa-gob-tuc.jpg" class="figure " alt="casa gob tuc" />
+         
           </div>
           <div class="carousel-item">
             <img src="imagenes/universidad.jpg" class="d-block w-100" alt="centro cultural unt" />
@@ -117,14 +120,13 @@
             <img src="imagenes/casa-historica.jpg" class="d-block w-100" alt="casa historica" />
           </div>
           <div class="carousel-item">
-            <img src="imagenes/parapente-cerro-san-javier.jpg" class=" w-100" alt="cerro san javier" />
+            <img src="imagenes/parapente-cerro-san-javier.jpg" class="d-block w-100" alt="cerro san javier" />
           </div>
           <div class="carousel-item">
-            <img src="imagenes/plaza-independencia.jpg" class=" w-100" alt="cerro san javier" />
+            <img src="imagenes/plaza-independencia.jpg" class="d-block w-100" alt="cerro san javier" />
 
           </div>
-          <div class="carousel-caption d-block ">
-
+          <div class="carousel-caption d-block dark">
             <div class="row  justify-content-md-end justify-content-sm-center">
               <div class="col-12 text-warning bg-secondary rounded-4 border-dark-subtle border-5 cicloConf ">
                 <h3 class="fs-2 text-center m-3">Ciclo de conferencias en S.M. de Tucumán</h3>
@@ -157,218 +159,222 @@
         <span class="visually-hidden">Next</span>
       </button>
       </div>
-    </section>
-
-    <!-- ORADORES -->
-    <section id="oradores" class="row d-flex justify-content-center flex-wrap " data-aos="zoom-in-up">
-      <article class="row d-flex justify-content-center text-center flex-wrap mt-5 pt-5">
-        <h1 class="text-light">ORADORES</h1>
-        <div class="card m-3">
-          <img src="imagenes/personajes/jobs.jpg" class="card-img-top rounded mt-3" alt="steve jobs" />
-          <div class="card-body">
-            <h5 class="card-title text-warning">Steve Jobs</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
-            <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
-          </div>
-        </div>
-        </div>
-        <div class="card m-3">
-          <img src="imagenes/personajes/evelyn-berezin.jpg" class="card-img-top rounded mt-3" alt="evelin berezin" />
-          <div class="card-body">
-            <h5 class="card-title text-warning">Evelyn Berezin</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
-            <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
-          </div>
-        </div>
-
-        <div class="card m-3">
-          <img src="imagenes/personajes/gates.png" class="card-img-top rounded mt-3" alt="bill gates" />
-          <div class="card-body">
-            <h5 class="card-title text-warning">Bill Gates</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
-            <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="row d-flex justify-content-center flex-wrap">
-        <div class="card m-3">
-          <img src="imagenes/personajes/zuckerberg.png" class="card-img-top rounded mt-3" alt="zuckerberg" />
-          <div class="card-body">
-            <h5 class="card-title text-warning">Mark Zuckerberg</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
-            <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
-          </div>
-        </div>
-
-        <div class="card m-3">
-          <img src="imagenes/personajes/katherine_johnson.jpg" class="card-img-top rounded mt-3"
-            alt="katherine johnson" />
-          <div class="card-body">
-            <h5 class="card-title text-warning">Katherin Johnson</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
-            <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- REGISTRO ORADORES-->
-    <section id="serOrador" class="row" data-aos="zoom-in-up">
-      <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark">
-        <form id="registrarOrador" action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
-          <h1 class="text-light ">REGISTRO DE ORADORES</h1>
-          <div class="mb-3 row">
-            <label for="apellido_fo" class="col-sm-2 col-form-label text-white">Apellido</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="apellido_fo" id="apellido_fo" aria-describedby="helpId"
-                placeholder="Ingrese su apellido" required />
+    </article>
+    
+    <article id="secciones">
+      <!-- ORADORES -->
+      <section id="oradores" class="row d-flex justify-content-center flex-wrap " data-aos="zoom-in-up">
+        <article class="row d-flex justify-content-center text-center flex-wrap mt-5 pt-5">
+          <h1 class="text-light">ORADORES</h1>
+          <div class="card m-3">
+            <img src="imagenes/personajes/jobs.jpg" class="card-img-top rounded mt-3" alt="steve jobs" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Steve Jobs</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
+              <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
             </div>
           </div>
-          <div class="mb-3 row">
-            <label for="nombre_fo" class="col-sm-2 col-form-label text-white">Nombre</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="nombre_fo" id="nombre_fo" aria-describedby="helpId"
-                placeholder="Ingrese su nombre" required />
+          </div>
+          <div class="card m-3">
+            <img src="imagenes/personajes/evelyn-berezin.jpg" class="card-img-top rounded mt-3" alt="evelin berezin" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Evelyn Berezin</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
+              <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
             </div>
           </div>
-          <div class="mb-3 row">
-            <label for="tema" class="col-sm-2 col-form-form-label text-white">Tema</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="tema" id="tema" aria-describedby="helpId"
-                placeholder="Ingrese el tema de interes" required />
+
+          <div class="card m-3">
+            <img src="imagenes/personajes/gates.png" class="card-img-top rounded mt-3" alt="bill gates" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Bill Gates</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
+              <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
             </div>
           </div>
-          <label for="descripcion" class="form-label text-white">Describa el tema de interes</label>
-          <textarea class="form-control" id="descripcion" rows="3" placeholder="Descirba el tema elegido"
-            required></textarea>
-          <hr class="border-bottom">
-          <div class="col mt-3">
-            <button type="button" class="btn btn-primary btn-sm-3" onclick="registrar();">
-              Resgistrarse
+        </article>
+
+        <article class="row d-flex justify-content-center flex-wrap">
+          <div class="card m-3">
+            <img src="imagenes/personajes/zuckerberg.png" class="card-img-top rounded mt-3" alt="zuckerberg" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Mark Zuckerberg</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
+              <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
+            </div>
+          </div>
+
+          <div class="card m-3">
+            <img src="imagenes/personajes/katherine_johnson.jpg" class="card-img-top rounded mt-3"
+              alt="katherine johnson" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Katherin Johnson</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#oradores" class="btn btn-primary" onclick="alert('Reseña orador');">Reseña</a>
+              <a href="#oradores" class="btn btn-secondary" onclick="alert('Biografia orador');">Biografia</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- REGISTRO ORADORES-->
+      <section id="serOrador" class="row d-flex justify-content-center flex-wrap" data-aos="zoom-in-up">
+        <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark">
+          <form id="registrarOrador" action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
+            <h1 class="text-light ">REGISTRO DE ORADORES</h1>
+            <div class="mb-3 row">
+              <label for="apellido_fo" class="col-sm-2 col-form-label text-white">Apellido</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="apellido_fo" id="apellido_fo" aria-describedby="helpId"
+                  placeholder="Ingrese su apellido" required />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="nombre_fo" class="col-sm-2 col-form-label text-white">Nombre</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="nombre_fo" id="nombre_fo" aria-describedby="helpId"
+                  placeholder="Ingrese su nombre" required />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="tema" class="col-sm-2 col-form-form-label text-white">Tema</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="tema" id="tema" aria-describedby="helpId"
+                  placeholder="Ingrese el tema de interes" required />
+              </div>
+            </div>
+            <label for="descripcion" class="form-label text-white">Describa el tema de interes</label>
+            <textarea class="form-control" id="descripcion" rows="3" placeholder="Descirba el tema elegido"
+              required></textarea>
+            <hr class="border-bottom">
+            <div class="col mt-3">
+              <button type="button" class="btn btn-primary btn-sm-3" onclick="registrar();">
+                Resgistrarse
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm('registrarOrador');">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- SEDE TUCUMAN -->
+      <section id="tucuman" class="row d-flex justify-content-center flex-wrap">
+        <article class="row  pt-5 mt-5">
+          <h1 class="text-light text-center">SEDE TUCUMAN</h1>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 p-2">
+              <div class="card-lg-6 card-sm-12">
+                <img src="/imagenes/san-miguel-de-tucuman.jpg" class=" fluid rounded w-100 " alt="plaza independencia">
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 p-2">
+              <div class="card-lg-6 card-sm-12">
+                <p class="text-white sede rounded p-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, hic minima ipsa ducimus quod
+                  repellat
+                  placeat provident adipisci magnam tenetur similique itaque rem. Nam eaque eum unde ex impedit dolorem.
+                  Tempora, necessitatibus fuga enim suscipit eveniet nobis est. Fugit molestias nostrum odit
+                  consequuntur
+                  saepe modi aut eius, maiores suscipit id commodi culpa? Iste ipsam eum assumenda maxime quos? Quasi,
+                  esse!
+                  Dolore necessitatibus nisi facilis illo ex maiores molestiae delectus, fuga ratione nemo explicabo
+                  aliquid
+                  totam saepe laborum itaque perferendis, voluptas aspernatur architecto, ad voluptatum nam cum placeat.
+                  Et,
+                  ut! Laboriosam!
+                </p>
+
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <a class="link-warning" href="https://es.wikipedia.org/wiki/San_Miguel_de_Tucum%C3%A1n">Conozca mas..</a>
+            </div>
+
+          </div>
+
+
+
+        </article>
+      </section>
+
+      <!-- FORMULARIO COMPRAR TICKET -->
+      <section id="comprarTickets" class="row d-flex justify-content-center flex-wrap">
+        <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark" data-aos="zoom-in-up">
+          <form id="comprarTicket" action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
+
+            <h1 class="text-light ">COMPRAR TICKETS</h1>
+
+            <div class="mb-3 row">
+              <label for="apellido_tk" class="col-sm-2 col-form-label text-white">Apellido</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="apellido_tk" id="apellido_tk" aria-describedby="helpId"
+                  placeholder="Ingrese su apellido" required />
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="nombre_tk" class="col-sm-2 col-form-label text-white">Nombre</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="nombre_tk" id="nombre_tk" aria-describedby="helpId"
+                  placeholder="Ingrese su nombre" required />
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="cantidad" class="col-sm-2 col-form-label text-white">Cantidad</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" name="cantidad" id="cantidad" aria-describedby="helpId"
+                  min="1" max="10" placeholder="Cantidad de tickets a comprar.Mmaximo 10" required
+                  onkeyup="calcularTotal();" onchange="calcularTotal();" />
+              </div>
+              <div class="text-warning">Valor ticket $1000</div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="descuento" class="col-sm-2 col-form-label text-white">Descuento</label>
+              <div class="col-sm-10">
+                <select class="form-select" name="descuento" id="descuento" onchange="calcularTotal();">
+                  <option value="50">Estudiante 50%</option>
+                  <option value="30">Orador 30%</option>
+                  <option value="10">Particular 10%</option>
+                </select>
+              </div>
+            </div>
+
+            <hr class="border-bottom">
+
+            <div class="text-warning m-2">
+              <h3>Total a pagar: $<span id="total">0</span></h3>
+            </div>
+
+            <hr class="border-bottom">
+
+            <button type="button" class="btn btn-primary btn-sm-3" onclick="comprarTicket();">
+              Comprar
             </button>
-            <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm('registrarOrador');">
+            <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm('comprarTicket');">
               Cancelar
             </button>
-          </div>
-        </form>
-      </div>
-    </section>
 
-    <!-- SEDE TUCUMAN -->
-    <section id="tucuman" class="row d-flex justify-content-center flex-wrap">
-      <article class="row  pt-5 mt-5">
-        <h1 class="text-light text-center">SEDE TUCUMAN</h1>
-        <div class="row">
-          <div class="col-lg-6 col-sm-12 p-2">
-            <div class="card-lg-6 card-sm-12">
-              <img src="/imagenes/san-miguel-de-tucuman.jpg" class=" fluid rounded w-100 " alt="plaza independencia">
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-sm-12 p-2">
-            <div class="card-lg-6 card-sm-12">
-              <p class="text-white sede rounded p-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, hic minima ipsa ducimus quod repellat
-                placeat provident adipisci magnam tenetur similique itaque rem. Nam eaque eum unde ex impedit dolorem.
-                Tempora, necessitatibus fuga enim suscipit eveniet nobis est. Fugit molestias nostrum odit consequuntur
-                saepe modi aut eius, maiores suscipit id commodi culpa? Iste ipsam eum assumenda maxime quos? Quasi,
-                esse!
-                Dolore necessitatibus nisi facilis illo ex maiores molestiae delectus, fuga ratione nemo explicabo
-                aliquid
-                totam saepe laborum itaque perferendis, voluptas aspernatur architecto, ad voluptatum nam cum placeat.
-                Et,
-                ut! Laboriosam!
-              </p>
-              
-            </div>
-          </div>
-          <div class="col-12 text-center">
-            <a class="link-warning" href="https://es.wikipedia.org/wiki/San_Miguel_de_Tucum%C3%A1n">Conozca mas..</a>  
-          </div>
-          
+          </form>
         </div>
-
-
-
-      </article>
-    </section>
-
-    <!-- FORMULARIO COMPRAR TICKET -->
-    <section id="comprarTickets" class="row">
-      <div class="col-6 text-center mt-5 pt-5" data-bs-theme="dark" data-aos="zoom-in-up">
-        <form id="comprarTicket" action="" class="position-relative top-50 start-100 translate-middle rounded p-3">
-
-          <h1 class="text-light ">COMPRAR TICKETS</h1>
-
-          <div class="mb-3 row">
-            <label for="apellido_tk" class="col-sm-2 col-form-label text-white">Apellido</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="apellido_tk" id="apellido_tk" aria-describedby="helpId"
-                placeholder="Ingrese su apellido" required />
-            </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label for="nombre_tk" class="col-sm-2 col-form-label text-white">Nombre</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="nombre_tk" id="nombre_tk" aria-describedby="helpId"
-                placeholder="Ingrese su nombre" required />
-            </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label for="cantidad" class="col-sm-2 col-form-label text-white">Cantidad</label>
-            <div class="col-sm-10">
-              <input type="number" class="form-control" name="cantidad" id="cantidad" aria-describedby="helpId" min="1"
-                max="10" placeholder="Cantidad de tickets a comprar.Mmaximo 10" required onkeyup="calcularTotal();"
-                onchange="calcularTotal();" />
-            </div>
-            <div class="text-warning">Valor ticket $1000</div>
-          </div>
-
-          <div class="mb-3 row">
-            <label for="descuento" class="col-sm-2 col-form-label text-white">Descuento</label>
-            <div class="col-sm-10">
-              <select class="form-select" name="descuento" id="descuento" onchange="calcularTotal();">
-                <option value="50">Estudiante 50%</option>
-                <option value="30">Orador 30%</option>
-                <option value="10">Particular 10%</option>
-              </select>
-            </div>
-          </div>
-
-          <hr class="border-bottom">
-
-          <div class="text-warning m-2">
-            <h3>Total a pagar: $<span id="total">0</span></h3>
-          </div>
-
-          <hr class="border-bottom">
-
-          <button type="button" class="btn btn-primary btn-sm-3" onclick="comprarTicket();">
-            Comprar
-          </button>
-          <button type="button" class="btn btn-secondary btn-sm-3" onclick="limpiarForm('comprarTicket');">
-            Cancelar
-          </button>
-
-        </form>
-      </div>
-    </section>
+      </section>
+    </article>
 
     <footer class="row sticky-bottom align-items-center bg-dark flex-wrap rounded">
-      <div class="col-12 col-md-4 align-items-center d-flex  flex-wrap">
+      <div class="col-12 align-items-center justify-content-center d-flex  flex-wrap">
         <a class="navbar-brand" href="#">
           <img class="rounded" src="imagenes/logtuc.png" alt="Logotucuman" width="50rem" height="50rem"
             class="d-inline-block align-text-top" />
@@ -377,18 +383,12 @@
           <img src="imagenes/logocac.png" alt="Logotucuman" width="80rem" height="60rem"
             class="d-inline-block align-text-top" />
         </a>
-        <span class="link-warning">
-          Conferencias CAC 2023
-        </span>
-      </div>
-
-      <div class="col-12 col-md-2 justify-content-center align-items-center d-flex flex-wrap">
-        <span class="link-warning">
+        <a href="#Home" class="nav-link link-warning mx-1"><span>Conferencias CAC 2023</span></a>
+     
+        <span class="link-warning mx-3">
           By Cristian M. Aparicio
         </span>
-      </div>
-
-      <div class="col-12 col-md-6 align-items-center d-none d-md-flex flex-wrap">
+     
         <a href="#" class="nav-link link-warning mx-1"><span>Cuéntanos</span></a>
         <a href="#" class="nav-link link-warning mx-1"><span>Privacidad</span></a>
         <a href="#" class="nav-link link-warning mx-1"><span>Estudiantes</span></a>
